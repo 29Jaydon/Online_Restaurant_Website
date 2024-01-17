@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Register Form</title>
+	<meta charset="UTF-8">
+	<link href="Global_Stylesheet.css" rel="stylesheet" >
+	<script>
+		function validate_RegistrationForm() {
+			let FirstName = document.forms["RegistrationForm"]["Fname"].value;
+			  if (FirstName == "") {
+				alert("First Name must be filled out");
+			  return false;
+			  }
+			let LastName = document.forms["RegistrationForm"]["Lname"].value;
+			  if ( LastName == "") {
+				alert("Last Name must be filled out");
+				return false;
+				}
+			let PhoneNum  = document.forms["RegistrationForm"]["PhoneNum"].value;
+			  if (PhoneNum == "" ||(isNaN(PhoneNum))|| (String(PhoneNum)).length !== 10 ) {
+				alert("Phone number is invalid please try again");
+				return false;
+				}
+				
+			// Email can not be left blank
+			let Email = document.forms["RegistrationForm"]["Email"].value;
+			if (Email == "") {
+				alert("Email must be filled out");
+				return false;
+				}
+			var at_sign = (String(Email)).indexOf("@");
+			var dot = (String(Email)).lastIndexOf(".");
+			
+			//Checking the postion of the dot and at sign
+			if ((at_sign != -1) &&
+				(at_sign != 0) &&
+				(dot != -1) &&
+				(dot != 0) &&
+				(dot > at_sign + 1)) {
+				alert("Email address is valid.");
+				return true;}
+			 else {
+				alert("Email address is not valid. Please re-enter it");
+			return false;}
+		
+			let Password  = document.forms["RegistrationForm"]["Password"].value;
+			  if (Password == "") {
+				alert("Password must be filled out");
+				return false;
+				}	
+			let UnitNUm  = document.forms["RegistrationForm"]["UnitNUm"].value;
+			  if (UnitNUm == "") {
+				alert("Unit Number must be filled out");
+				return false;
+				}
+			let StreetName  = document.forms["RegistrationForm"]["StreetName"].value;
+			  if (StreetName == "") {
+				alert("Street Name must be filled out");
+				return false
+				}
+			let Suburb  = document.forms["RegistrationForm"]["Suburb"].value;
+			  if (Suburb == "") {
+				alert("Suburb must be filled out");
+				return false;
+				}	
+			let City  = document.forms["RegistrationForm"]["City"].value;
+			  if (City == "") {
+				alert("City must be filled out");
+				return false;
+				}
+		}	
+	</script>
+</head>
+	<img src="Images/Website_Banner_Edited_1.png" class="Website_Banner">
+	<P>Please Fill in the form below to create an account.<br>
+	Please type your information in full. Do not use abrivations.</P>
+	
+	<div class="Questions">
+		<form name= "RegistrationForm" action="Processing_Registration_Form.php" onsubmit="return validate_RegistrationForm()" method="post">
+			<h2>Personal Information</h2>
+			<label for="Fname">First Name</label>
+			<input type="text" id="Fname" name="Fname">
+			
+			<label for="Lname">Last Name</label>
+			<input type="text" id="Lname" name="Lname">
+			
+			<label for="PhoneNum">Phone Number</label>
+			<input type="text" id="PhoneNum" name="PhoneNum">
+			
+			<label for="Email">Email Address</label>
+			<input type="text" id="Email" name="Email">
+			
+			<label for="Password">Password</label>
+			<input type="text" id="Password" name="Password">
+			
+			<h2>Delivery Information</h2>
+			<label for="UnitNUm">Unit Number</label>
+			<input type="text" id="UnitNUm" name="UnitNUm">
+			
+			<label for="StreetName">Street Name</label>
+			<input type="text" id="StreetName" name="StreetName">
+			
+			<label for="Suburb">Suburb</label>
+			<input type="text" id="Suburb" name="Suburb">
+			
+			<label for="City">City</label>
+			<input type="text" id="City" name="City"><br>
+			
+			<button>Submit</button>	
+		</form>
+	</div>
+<body>
+</body>
+
+</html>

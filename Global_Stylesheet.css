@@ -1,0 +1,47 @@
+.Website_Banner{
+	padding:0;
+	margin:0;
+}
+p{
+	font-family:Papyrus,Fantasy;
+	font-size: 20px;
+	color: #ad9934	
+}
+
+h1{
+	font-family:Papyrus,Fantasy;
+	font-size: 30px;
+	color: #ad9934;
+}
+
+h2{
+	font-family:Papyrus,Fantasy;
+	font-size: 30px;
+	color: #ad9934;	
+	text-align:center;
+}
+.Questions{
+	text-align:center;
+}
+.Questions label{
+	font-family:Papyrus,Fantasy;
+	font-size: 20px;
+	color: #ad9934;
+	text-align:center;
+	display:block;
+	
+}
+
+.Questions input{
+	display:block;
+	width: 25%;
+	margin-left:500px;
+}
+
+button{
+	background-color: #4f4e4a;
+	border-radius: 12px;
+	font-size: 25px;
+	color: #f5f4f2;
+}
+

@@ -1,0 +1,106 @@
+h1{
+	font-family:Papyrus,Fantasy;
+	font-size: 48px;
+	color: #ad9934;
+	border-bottom: 2px solid #ad9934;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+.NavigationBar{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.India_Flag_Image{
+	width: 100px;
+	margin: 5px;
+	padding: 0;
+	margin: 0;
+}
+
+nav{
+	flex: 1;
+	text-align: right;
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 25px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-size: 14;
+}
+
+nav ul li a button{
+	background-color: #4f4e4a;
+	border-radius: 12px;
+	font-size: 25px;
+	color: #f5f4f2;
+}
+
+.Curry_Pots{
+	width: 1280px;
+	height: 213px;
+	border-radius:10px;
+	padding: 0;
+	margin: 0;
+}
+
+h2{
+	font-family:Papyrus,Fantasy;
+	font-size: 30px;
+	color: #ad9934;
+	
+}
+p{
+	font-family:Papyrus,Fantasy;
+	font-size: 20px;
+}
+
+.TajMahal{
+	width:240px;
+	height:240px;
+	border-radius:10px;
+	padding-left: 5px;
+}
+
+ ul li{
+	list-style: none;
+	font-family:Papyrus,Fantasy;
+	font-size: 20px;
+ }
+ 
+.ContactUs{
+ display: flex;
+ border-bottom: 2px solid #ad9934;
+}
+.ContactUs > .ContactsList{
+	margin: 10px;
+	padding-left: 150px;
+}
+
+ .ContactsList ul li a button{
+	background-color: #4f4e4a;
+	border-radius: 12px;
+	font-size: 25px;
+	color: #f5f4f2;
+	width: 100%
+ }
+ 
+ h3{
+	font-family:Times New Roman, Times, serif;
+	font-size: 12px;
+	color: #000000; 
+ }
+ 
+ .LegalStuff p{
+	font-family:Times New Roman, Times, serif;
+	font-size: 12px;
+	color: #000000; 
+ }
